@@ -1,12 +1,8 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col">
-        <button type="button" class="btn btn-primary" @click="$router.push({name: back})">{{ back }}</button>
-      </div>
-      <div class="col">
-        <button type="button" class="btn btn-primary" @click="$router.push({name: forward})">{{ forward }}</button>
-      </div>
+      <div class="col"></div>
+      <div class="col"></div>
     </div>
   </div>
 </template>
@@ -23,6 +19,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
