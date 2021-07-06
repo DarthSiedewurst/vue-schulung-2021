@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import Marco from "@/views/Marco/Marco.vue";
 import MarcoVillains from "@/views/Marco/MarcoVillains.vue";
 import MarcoHeroes from "@/views/Marco/MarcoHeroes.vue";
+import View from "@/views/Jan/View.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -27,6 +28,11 @@ const routes: Array<RouteRecordRaw> = [
       },
     ],
   },
+  {
+    path: "/Jan",
+    name: "Jan",
+    component: View,
+  }
 ];
 
 const router = createRouter({
