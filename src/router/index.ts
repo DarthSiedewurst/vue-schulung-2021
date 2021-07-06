@@ -3,6 +3,7 @@ import Home from "../views/Home.vue";
 import Marco from "@/views/Marco/Marco.vue";
 import MarcoVillains from "@/views/Marco/MarcoVillains.vue";
 import MarcoHeroes from "@/views/Marco/MarcoHeroes.vue";
+import View from "@/views/Jan/View.vue";
 import Pitt from "@/views/Pitt/Pitt.vue";
 import PittVillains from "@/views/Pitt/PittVillains.vue";
 import PittHeroes from "@/views/Pitt/PittHeroes.vue";
@@ -35,6 +36,11 @@ const routes: Array<RouteRecordRaw> = [
         component: MarcoVillains,
       },
     ],
+  },
+  {
+    path: "/Jan",
+    name: "Jan",
+    component: View,
   },
 
   {
