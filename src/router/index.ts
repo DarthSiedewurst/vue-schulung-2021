@@ -3,6 +3,9 @@ import Home from "../views/Home.vue";
 import Marco from "@/views/Marco/Marco.vue";
 import MarcoVillains from "@/views/Marco/MarcoVillains.vue";
 import MarcoHeroes from "@/views/Marco/MarcoHeroes.vue";
+import Niklas from "@/views/Niklas/Niklas.vue";
+import NiklasVillains from "@/views/Niklas/NiklasVillains.vue";
+import NiklasHeroes from "@/views/Niklas/NiklasHeroes.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +27,23 @@ const routes: Array<RouteRecordRaw> = [
         path: "villains",
         name: "villains",
         component: MarcoVillains,
+      },
+    ],
+  },
+  {
+    path: "/niklas",
+    name: "Niklas",
+    component: Niklas,
+    children: [
+      {
+        path: "NiklasHeroes",
+        name: "NiklasHeroes",
+        component: NiklasHeroes,
+      },
+      {
+        path: "NiklasVillains",
+        name: "NiklasVillainsillains",
+        component: NiklasVillains,
       },
     ],
   },
