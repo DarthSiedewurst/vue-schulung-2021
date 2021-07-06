@@ -49,7 +49,7 @@ const routes: Array<RouteRecordRaw> = [
 				component: MikailVillains,
 			},
 		],
-	}
+	},
   {
     path: "/niklas",
     name: "Niklas",
