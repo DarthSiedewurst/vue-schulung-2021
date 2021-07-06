@@ -12,7 +12,7 @@
 import { defineComponent, ref, reactive } from "vue";
 
 export default defineComponent({
-  name: "MarcoHeroes",
+  name: "DominikHeroes",
   components: {},
   props: {},
   setup() {

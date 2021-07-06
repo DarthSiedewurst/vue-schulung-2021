@@ -40,10 +40,9 @@ export default defineComponent({
   setup() {
     let villains = reactive({
       list: [
-        { name: "Shrek", id: 0 },
-        { name: "LA2", id: 1 },
-        { name: "Xanathar", id: 2 },
-        { name: "Jabba The Hut", id: 3 },
+        { name: "Pain", id: 0 },
+        { name: "1und1", id: 1 },
+        { name: "Piccolo", id: 2 },
       ],
       newVillain: "",
     });
