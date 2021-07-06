@@ -6,6 +6,12 @@ import MarcoHeroes from "@/views/Marco/MarcoHeroes.vue";
 import Pitt from "@/views/Pitt/Pitt.vue";
 import PittVillains from "@/views/Pitt/PittVillains.vue";
 import PittHeroes from "@/views/Pitt/PittHeroes.vue";
+import Niklas from "@/views/Niklas/Niklas.vue";
+import NiklasVillains from "@/views/Niklas/NiklasVillains.vue";
+import NiklasHeroes from "@/views/Niklas/NiklasHeroes.vue";
+import Mikail from "@/views/Mikail/Mikail.vue"
+import MikailVillains from "@/views/Mikail/MikailVillains.vue"
+import MikailHeroes from "@/views/Mikail/MikailHeroes.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -53,7 +59,42 @@ const routes: Array<RouteRecordRaw> = [
       },
     ],
   },
-];
+
+  {
+    path: "/mikail",
+    name: "Mikail",
+    component: Mikail,
+    children: [
+      {
+        path: "heroes",
+        name: "heroes",
+        component: MikailHeroes,
+      },
+      {
+        path: "villains",
+        name: "villains",
+        component: MikailVillains,
+      },
+    ],
+  },
+  {
+    path: "/niklas",
+    name: "Niklas",
+    component: Niklas,
+    children: [
+      {
+        path: "NiklasHeroes",
+        name: "NiklasHeroes",
+        component: NiklasHeroes,
+      },
+      {
+        path: "NiklasVillains",
+        name: "NiklasVillainsillains",
+        component: NiklasVillains,
+      },
+    ],
+  },
+]
 
 
 const router = createRouter({
