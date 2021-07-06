@@ -3,8 +3,8 @@
     <h1>Pitt</h1>
     <div class="row">
       <div class="col-2">
-        <h2><router-link to="/pitt/heroes">Heroes</router-link></h2>
-        <h2><router-link to="/pitt/villains">Villains</router-link></h2>
+        <h2><router-link to="/pitt/pittHeroes">Heroes</router-link></h2>
+        <h2><router-link to="/pitt/pittVillains">Villains</router-link></h2>
       </div>
       <div class="col-10">
         <router-view />
@@ -13,7 +13,7 @@
     <navigation :back="back" :forward="forward"></navigation>
   </div>
   <div class="home">
-    <img alt="Hero logo" src="@/assets/hero.png" />
+    <img alt="Hero logo" src="@/assets/Hero.png" />
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default defineComponent({
   components: { Navigation },
   setup() {
     const back = "Niklas";
-    const forward = "Tobias";
+    const forward = "Tobi";
     return { back, forward };
   },
 });

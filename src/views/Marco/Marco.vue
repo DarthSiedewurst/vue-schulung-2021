@@ -22,7 +22,7 @@ export default defineComponent({
   name: "Marco",
   components: { Navigation },
   setup() {
-    const back = "Tobias";
+    const back = "Tobi";
     const forward = "Dominik";
     return { back, forward };
   },

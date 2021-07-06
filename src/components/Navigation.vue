@@ -30,7 +30,7 @@ export default defineComponent({
       router.push({ name: prop.back });
     };
     const forwardClicked = () => {
-      router.push({ name: "Home" });
+      router.push({ name: prop.forward });
     };
     return {
       backClicked,

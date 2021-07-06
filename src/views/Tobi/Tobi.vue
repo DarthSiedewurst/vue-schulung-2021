@@ -3,8 +3,8 @@
     <h1>Tobias</h1>
     <div class="row">
       <div class="col-2">
-        <h2><router-link to="/tobi/heroes">Heroes</router-link></h2>
-        <h2><router-link to="/tobi/villains">Villains</router-link></h2>
+        <h2><router-link to="/tobi/tobiHeroes">Heroes</router-link></h2>
+        <h2><router-link to="/tobi/tobiVillains">Villains</router-link></h2>
       </div>
       <div class="col-10">
         <router-view />

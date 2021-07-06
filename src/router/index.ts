@@ -48,13 +48,13 @@ const routes: Array<RouteRecordRaw> = [
     component: Tobi,
     children: [
       {
-        path: "heroes",
-        name: "heroes",
+        path: "tobiHeroes",
+        name: "tobiHeroes",
         component: TobiHeroes,
       },
       {
-        path: "villains",
-        name: "villains",
+        path: "tobiVillains",
+        name: "tobiVillains",
         component: TobiVillains,
       },
     ],
@@ -76,13 +76,13 @@ const routes: Array<RouteRecordRaw> = [
     component: Pitt,
     children: [
       {
-        path: "heroes",
-        name: "heroes",
+        path: "pittHeroes",
+        name: "pittHeroes",
         component: PittHeroes,
       },
       {
-        path: "villains",
-        name: "villains",
+        path: "pittVillains",
+        name: "pittVillains",
         component: PittVillains,
       },
     ],
@@ -94,13 +94,13 @@ const routes: Array<RouteRecordRaw> = [
     component: Mikail,
     children: [
       {
-        path: "heroes",
-        name: "heroes",
+        path: "mikailHeroes",
+        name: "mikailHeroes",
         component: MikailHeroes,
       },
       {
-        path: "villains",
-        name: "villains",
+        path: "mikailVillains",
+        name: "mikailVillains",
         component: MikailVillains,
       },
     ],
@@ -117,7 +117,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: "NiklasVillains",
-        name: "NiklasVillainsillains",
+        name: "NiklasVillains",
         component: NiklasVillains,
       },
     ],
