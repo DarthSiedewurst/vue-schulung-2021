@@ -7,6 +7,10 @@ import TobiHeroes from "@/views/Tobi/TobiHeroes.vue";
 import Marco from "@/views/Marco/Marco.vue";
 import MarcoVillains from "@/views/Marco/MarcoVillains.vue";
 import MarcoHeroes from "@/views/Marco/MarcoHeroes.vue";
+import Dominik from "@/views/Dominik/Dominik.vue";
+import DominikHeroes from "@/views/Dominik/DominikHeroes.vue";
+import DominikVillains from "@/views/Dominik/DominikVillains.vue";
+
 import View from "@/views/Jan/View.vue";
 import Pitt from "@/views/Pitt/Pitt.vue";
 import PittVillains from "@/views/Pitt/PittVillains.vue";
@@ -119,6 +123,23 @@ const routes: Array<RouteRecordRaw> = [
         path: "NiklasVillains",
         name: "NiklasVillains",
         component: NiklasVillains,
+      },
+    ],
+  },
+  {
+    path: "/dominik",
+    name: "Dominik",
+    component: Dominik,
+    children: [
+      {
+        path: "heroes",
+        name: "heroes",
+        component: DominikHeroes,
+      },
+      {
+        path: "villains",
+        name: "villains",
+        component: DominikVillains,
       },
     ],
   },
