@@ -132,13 +132,13 @@ const routes: Array<RouteRecordRaw> = [
     component: Dominik,
     children: [
       {
-        path: "heroes",
-        name: "heroes",
+        path: "dominikHeroes",
+        name: "dominikHeroes",
         component: DominikHeroes,
       },
       {
-        path: "villains",
-        name: "villains",
+        path: "dominikVillains",
+        name: "dominikVillains",
         component: DominikVillains,
       },
     ],

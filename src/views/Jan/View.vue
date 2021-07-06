@@ -28,15 +28,17 @@
         </button>
       </div>
     </div>
+    <navigation :back="back" :forward="forward"></navigation>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive } from "vue";
+import Navigation from "@/components/Navigation.vue"; // @ is an alias to /src
 
 export default defineComponent({
   name: "meme",
-  components: {},
+  components: { Navigation },
   props: {},
   setup() {
     let meme = reactive({
@@ -48,6 +50,9 @@ export default defineComponent({
       ],
       newMeme: "",
     });
+
+    const back = "Dominik";
+    const forward = "Mikail";
 
     function deleteMeme(id: number): void {
       let newMeme = meme.list;
@@ -62,7 +67,7 @@ export default defineComponent({
       meme.list.push(memes);
       meme.newMeme = "";
     }
-    return { meme, deleteMeme, createMeme };
+    return { meme, deleteMeme, createMeme, back, forward };
   },
 });
 </script>
