@@ -9,7 +9,7 @@
         <div class="col-6">
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-danger"
             @click="deleteVillain(villain.id)"
           >
             löschen
