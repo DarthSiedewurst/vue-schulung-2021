@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <h1>Marco</h1>
+    <h1>Dominik</h1>
+    <img src="../../assets/wew.png" />
     <div class="row">
       <div class="col-2">
         <h2><router-link to="/dominik/heroes">Heroes</router-link></h2>
